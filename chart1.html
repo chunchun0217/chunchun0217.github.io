@@ -178,7 +178,7 @@
     var lineTip = {};
 
 
-    d3.csv("https://raw.githubusercontent.com/chunchun0217/D3_FinalProject/master/cwurData.csv", function(csv) {
+    d3.csv("./data/cwurData.csv", function(csv) {
         rawData = d3.nest().key(function(d) {
             return d.institution;
         }).entries(csv);
